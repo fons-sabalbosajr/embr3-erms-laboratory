@@ -1,0 +1,423 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2D916475-5167-4494-99BB-8D40AA070CDA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>EMB_ERM_Sub_Sytem_Laboratory_Unit</RootNamespace>
+    <AssemblyName>EMB-ERM_Sub-Sytem_Laboratory_Unit</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>\\10.14.76.167\IDMS_Laboratory_Database\LABORATORY\Database\ERM System\ERM_Laboratory_Subsystem\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>true</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <UpdateUrl>\\10.14.76.167\IDMS_Laboratory_Database\LABORATORY\Database\ERM System\ERM_Laboratory_Subsystem\</UpdateUrl>
+    <SupportUrl>http://r3.emb.gov.ph/</SupportUrl>
+    <ProductName>EMB - ERMS %28Electronic Records Management Laboratory Sub-System%29</ProductName>
+    <PublisherName>Department of Environment and Natural Resources</PublisherName>
+    <SuiteName>Enviromental Management Bureau Region III</SuiteName>
+    <MinimumRequiredVersion>1.0.0.4</MinimumRequiredVersion>
+    <ApplicationRevision>17</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logoicon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>EMB_ERM_Sub_Sytem_Laboratory_Unit.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>35F7B2063A2E003F951AC2A6B243AAD5C6AF2806</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>EMB-ERM_Sub-Sytem_Laboratory_Unit_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.Charts.WinForms, Version=1.0.4.0, Culture=neutral, PublicKeyToken=70866663edbc6595, processorArchitecture=MSIL">
+      <HintPath>packages\Guna.Charts.WinForms.1.0.4\lib\net40\Guna.Charts.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.3.4, Culture=neutral, PublicKeyToken=4015e4865bda28a4, processorArchitecture=MSIL">
+      <HintPath>packages\Guna.UI2.WinForms.2.0.3.4\lib\net40\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Siticone.Desktop.UI, Version=2.0.9.0, Culture=neutral, PublicKeyToken=422d444a8a9fa6db, processorArchitecture=MSIL">
+      <HintPath>packages\Siticone.Desktop.UI.2.0.9\lib\net40\Siticone.Desktop.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CustomFolderDialog.cs" />
+    <Compile Include="FileLog.cs" />
+    <Compile Include="frm_dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_dashboard.Designer.cs">
+      <DependentUpon>frm_dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_dashboard_libraries.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_dashboard_libraries.Designer.cs">
+      <DependentUpon>frm_dashboard_libraries.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_filelibrary_download.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_filelibrary_download.Designer.cs">
+      <DependentUpon>frm_filelibrary_download.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_filelibrary_print.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_filelibrary_print.Designer.cs">
+      <DependentUpon>frm_filelibrary_print.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_home.Designer.cs">
+      <DependentUpon>frm_home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_home_filelibrary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_home_filelibrary.Designer.cs">
+      <DependentUpon>frm_home_filelibrary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_filelibrarydetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_filelibrarydetails.Designer.cs">
+      <DependentUpon>frm_filelibrarydetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_home_login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_home_login.Designer.cs">
+      <DependentUpon>frm_home_login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_home_settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_home_settings.Designer.cs">
+      <DependentUpon>frm_home_settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_home_signup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_home_signup.Designer.cs">
+      <DependentUpon>frm_home_signup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_home_splashscreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_home_splashscreen.Designer.cs">
+      <DependentUpon>frm_home_splashscreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_home_upload.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_home_upload.Designer.cs">
+      <DependentUpon>frm_home_upload.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_loadingform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_loadingform.Designer.cs">
+      <DependentUpon>frm_loadingform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_settings_createprofile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_settings_createprofile.Designer.cs">
+      <DependentUpon>frm_settings_createprofile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_settings_datainputconfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_settings_datainputconfig.Designer.cs">
+      <DependentUpon>frm_settings_datainputconfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_settings_filehistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_settings_filehistory.Designer.cs">
+      <DependentUpon>frm_settings_filehistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_settings_registeresaccounts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_settings_registeresaccounts.Designer.cs">
+      <DependentUpon>frm_settings_registeresaccounts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_settings_signuaccounts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_settings_signuaccounts.Designer.cs">
+      <DependentUpon>frm_settings_signuaccounts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_settings_userhistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_settings_userhistory.Designer.cs">
+      <DependentUpon>frm_settings_userhistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_viewPDFfilelibrary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_viewPDFfilelibrary.Designer.cs">
+      <DependentUpon>frm_viewPDFfilelibrary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_z_shutdown.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_z_shutdown.Designer.cs">
+      <DependentUpon>frm_z_shutdown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoadingFunction.cs" />
+    <Compile Include="Login_History.cs" />
+    <Compile Include="PrintHelper.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frm_dashboard.resx">
+      <DependentUpon>frm_dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_dashboard_libraries.resx">
+      <DependentUpon>frm_dashboard_libraries.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_filelibrary_download.resx">
+      <DependentUpon>frm_filelibrary_download.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_filelibrary_print.resx">
+      <DependentUpon>frm_filelibrary_print.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_home.resx">
+      <DependentUpon>frm_home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_home_filelibrary.resx">
+      <DependentUpon>frm_home_filelibrary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_filelibrarydetails.resx">
+      <DependentUpon>frm_filelibrarydetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_home_login.resx">
+      <DependentUpon>frm_home_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_home_settings.resx">
+      <DependentUpon>frm_home_settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_home_signup.resx">
+      <DependentUpon>frm_home_signup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_home_splashscreen.resx">
+      <DependentUpon>frm_home_splashscreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_home_upload.resx">
+      <DependentUpon>frm_home_upload.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_loadingform.resx">
+      <DependentUpon>frm_loadingform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_settings_createprofile.resx">
+      <DependentUpon>frm_settings_createprofile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_settings_datainputconfig.resx">
+      <DependentUpon>frm_settings_datainputconfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_settings_filehistory.resx">
+      <DependentUpon>frm_settings_filehistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_settings_registeresaccounts.resx">
+      <DependentUpon>frm_settings_registeresaccounts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_settings_signuaccounts.resx">
+      <DependentUpon>frm_settings_signuaccounts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_settings_userhistory.resx">
+      <DependentUpon>frm_settings_userhistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_viewPDFfilelibrary.resx">
+      <DependentUpon>frm_viewPDFfilelibrary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_z_shutdown.resx">
+      <DependentUpon>frm_z_shutdown.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="EMB-ERM_Sub-Sytem_Laboratory_Unit_TemporaryKey.pfx" />
+    <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="logoicon.ico" />
+    <None Include="Resources\shutdown.png" />
+    <None Include="Resources\icons8-nas-100.png" />
+    <None Include="Resources\icons8-ok-48.png" />
+    <None Include="Resources\icons8-folder-48.png" />
+    <None Include="Resources\icons8-active-state-48.png" />
+    <None Include="Resources\icons8-more-48 %282%29.png" />
+    <None Include="Resources\loading icon.gif" />
+    <None Include="Resources\document.gif" />
+    <None Include="Resources\icons8-user-account-96.png" />
+    <None Include="Resources\icons8-document-240.png" />
+    <None Include="Resources\icons8-remove-48 %282%29.png" />
+    <None Include="Resources\icons8-print-48 %283%29.png" />
+    <None Include="Resources\icons8-add-file-48 %283%291.png" />
+    <None Include="Resources\icons8-delete-48.png" />
+    <None Include="Resources\icons8-search-folder-48 %282%29.png" />
+    <None Include="Resources\icons8-update-left-rotation-48.png" />
+    <None Include="Resources\icons8-pdf-48.png" />
+    <None Include="Resources\icons8-save-close-48.png" />
+    <None Include="Resources\icons8-export-pdf-48.png" />
+    <None Include="Resources\icons8-print-file-48.png" />
+    <None Include="Resources\icons8-file-preview-48.png" />
+    <None Include="Resources\icons8-delete-database-481.png" />
+    <None Include="Resources\icons8-save-close-48 %282%29.png" />
+    <None Include="Resources\icons8-edit-48 %282%29.png" />
+    <None Include="Resources\icons8-delete-database-48.png" />
+    <None Include="Resources\icons8-add-database-48.png" />
+    <None Include="Resources\icons8-remove-481.png" />
+    <None Include="Resources\icons8-add-file-48 %283%29.png" />
+    <None Include="Resources\icons8-search-folder-48 %283%29.png" />
+    <None Include="Resources\icons8-high-priority-481.png" />
+    <None Include="Resources\icons8-high-priority-48.png" />
+    <None Include="Resources\icons8-help-48.png" />
+    <None Include="Resources\icons8-erase-48.png" />
+    <None Include="Resources\icons8-search-48.png" />
+    <None Include="Resources\icons8-edit-48.png" />
+    <None Include="Resources\icons8-save-60.png" />
+    <None Include="Resources\icons8-camera-48.png" />
+    <None Include="Resources\icons8-eye-48.png" />
+    <None Include="Resources\icons8-checked-user-male-48.png" />
+    <None Include="Resources\icons8-remove-48.png" />
+    <None Include="Resources\icons8-available-updates-48.png" />
+    <None Include="Resources\icons8-database-administrator-48.png" />
+    <None Include="Resources\icons8-admin-settings-male-48.png" />
+    <None Include="Resources\logobw.png" />
+    <None Include="Resources\admin.png" />
+    <None Include="Resources\folder.png" />
+    <None Include="Resources\upload.png" />
+    <None Include="Resources\dashboard.png" />
+    <None Include="Resources\icons8-menu-48.png" />
+    <None Include="Resources\HOMELOGOadvancedserver.png" />
+    <None Include="Resources\icons8-settings-50.png" />
+    <None Include="Resources\ezgif.com-gif-maker %282%29.png" />
+    <None Include="Resources\icons8-back-48.png" />
+    <None Include="Resources\icons8-cancel-48.png" />
+    <None Include="Resources\loading %281%29.gif" />
+    <None Include="Resources\SPLASCHSCREEN.jpg" />
+    <None Include="Resources\icons8-lock-48.png" />
+    <None Include="Resources\icons8-user-48.png" />
+    <None Include="Resources\logo.png" />
+    <None Include="Resources\login copy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AxAcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

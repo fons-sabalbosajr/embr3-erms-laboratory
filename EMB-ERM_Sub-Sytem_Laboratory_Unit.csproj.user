@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PublishUrlHistory>\\10.14.76.167\IDMS_Laboratory_Database\LABORATORY\Database\ERM System\ERM_Laboratory_Subsystem\|D:\EMB ERMS SUBSYSTEM\EMB ERMS Subsystem for Records Unit\Temp_Setup\Laboratory\|D:\EMB ERMS SUBSYSTEM\EMB ERMS Subsystem for Records Unit\Temp_Setup\|\\10.14.76.167\IDMS_Laboratory_Database\LABORATORY\Database\ERM System\ERM_Records_Subsystem\|\\10.14.76.167\IDMS_Laboratory_Database\LABORATORY\Database\ERM_Laboratory_System\</PublishUrlHistory>
+    <InstallUrlHistory />
+    <SupportUrlHistory />
+    <UpdateUrlHistory>\\10.14.76.167\IDMS_Laboratory_Database\LABORATORY\Database\ERM System\ERM_Laboratory_Subsystem\|\\10.14.76.167\IDMS_Laboratory_Database\LABORATORY\Database\ERM System\ERM_Records_Subsystem\</UpdateUrlHistory>
+    <BootstrapperUrlHistory />
+    <ErrorReportUrlHistory />
+    <FallbackCulture>en-US</FallbackCulture>
+    <VerifyUploadedFiles>false</VerifyUploadedFiles>
+  </PropertyGroup>
+  <PropertyGroup>
+    <EnableSecurityDebugging>false</EnableSecurityDebugging>
+  </PropertyGroup>
+</Project>
